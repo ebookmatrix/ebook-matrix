@@ -3,63 +3,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ebook Matrix | Digital Books</title>
-  <meta name="description" content="Discover useful digital ebooks, guides and resources at Ebook Matrix.">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #faf9f6;
-      color: #171717;
-    }
-    header {
-      padding: 22px 7%;
-      background: #111;
-      color: white;
-      font-weight: bold;
-      font-size: 24px;
-    }
-    header span { color: #ffd43b; }
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 75px 24px;
-      text-align: center;
-    }
-    .tag {
-      color: #806300;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    h1 { font-size: clamp(36px, 6vw, 60px); margin: 18px 0; }
-    p { color: #555; line-height: 1.7; }
-    .btn {
-      display: inline-block;
-      background: #ffd43b;
-      color: #111;
-      padding: 15px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 18px;
-    }
-    footer { text-align: center; padding: 24px; color: #666; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ebook Matrix | Practical Digital Guides</title>
+  <meta name="description" content="Discover practical ebooks, workout guides, kids worksheets and digital challenges at Ebook Matrix.">
+  <meta name="theme-color" content="#111111">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>Ebook <span>Matrix</span></header>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ebook <span>Matrix</span></a>
+    <nav>
+      <a href="#ebooks">Explore Ebooks</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
   <main>
-    <div class="tag">LEARN • GROW • IMPROVE</div>
-    <h1>Knowledge that moves you forward.</h1>
-    <p>Explore practical ebooks and digital guides designed to help you learn new skills and achieve your goals.</p>
-    <a class="btn" href="#ebooks">Explore Ebooks</a>
-    <section id="ebooks">
-      <h2>Our Digital Library</h2>
-      <p>New ebooks and useful resources are coming soon.</p>
+    <section class="hero">
+      <span class="eyebrow">YOUR DIGITAL KNOWLEDGE LIBRARY</span>
+      <h1>Small Guides.<br><span>Big Possibilities.</span></h1>
+      <p>Discover practical ebooks designed to help you learn, grow and take action — one page at a time.</p>
+      <a class="button" href="#ebooks">Explore Our Ebooks →</a>
+      <div class="hero-note">Instant digital learning · Practical resources · Easy access</div>
+    </section>
+
+    <section class="section" id="ebooks">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE COLLECTION</span>
+          <h2>Explore Our Ebooks</h2>
+          <p>Choose a guide that matches your next goal.</p>
+        </div>
+        <span class="price-note">Starting at ₹99</span>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <a class="cover cover-fitness" href="products/hiit.html" aria-label="View workout ebook">
+            <span class="cover-label">FITNESS GUIDE</span>
+            <span class="cover-icon">💪</span>
+            <strong>15-MINUTE<br>AT-HOME HIIT</strong>
+            <span class="cover-bottom">MOVE • SWEAT • REPEAT</span>
+          </a>
+          <div class="product-info">
+            <span class="category">FITNESS & WELLNESS</span>
+            <h3>15-Minute At-Home HIIT Workout</h3>
+            <p>A practical guide to short home workouts.</p>
+            <div class="product-bottom">
+              <strong>₹99</strong>
+              <a class="text-link" href="products/hiit.html">View ebook →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="cover cover-kids" href="products/kids-worksheets.html" aria-label="View kids worksheets ebook">
+            <span class="cover-label">LEARNING BUNDLE</span>
+            <span class="cover-icon">✏️</span>
+            <strong>200 KIDS<br>WORKSHEETS</strong>
+            <span class="cover-bottom">LEARN • TRACE • CREATE</span>
+          </a>
+          <div class="product-info">
+            <span class="category">KIDS & EDUCATION</span>
+            <h3>200 Kids Worksheets Bundle</h3>
+            <p>Activity sheets for learning and practice.</p>
+            <div class="product-bottom">
+              <strong>₹99</strong>
+              <a class="text-link" href="products/kids-worksheets.html">View ebook →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <a class="cover cover-detox" href="products/phone-detox.html" aria-label="View phone detox ebook">
+            <span class="cover-label">30-DAY CHALLENGE</span>
+            <span class="cover-icon">📵</span>
+            <strong>PHONE<br>DETOX</strong>
+            <span class="cover-bottom">LESS SCROLLING • MORE LIVING</span>
+          </a>
+          <div class="product-info">
+            <span class="category">HABITS & PRODUCTIVITY</span>
+            <h3>30-Day Phone Detox Challenge</h3>
+            <p>A structured challenge to build healthier phone habits.</p>
+            <div class="product-bottom">
+              <strong>₹99</strong>
+              <a class="text-link" href="products/phone-detox.html">View ebook →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <span class="eyebrow">ABOUT EBOOK MATRIX</span>
+      <h2>Useful knowledge, made practical.</h2>
+      <p>Our goal is to make digital learning resources easy to discover and simple to use. Explore a guide, understand what is included and choose what works for you.</p>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>Digital Guides</strong><span>Practical resources</span></div>
+      <div><strong>Simple Shopping</strong><span>Clear product details</span></div>
+      <div><strong>Learn Anywhere</strong><span>Digital-first learning</span></div>
     </section>
   </main>
-  <footer>© 2026 Ebook Matrix</footer>
+
+  <footer class="site-footer">
+    <a class="brand" href="index.html">Ebook <span>Matrix</span></a>
+    <p>Practical digital resources for everyday growth.</p>
+    <div class="footer-links">
+      <a href="mailto:YOUR_EMAIL@example.com">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <small>© 2026 Ebook Matrix. All rights reserved.</small>
+  </footer>
 </body>
 </html>
