@@ -1,921 +1,114 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Make learning fun with the 200 Kids Worksheets Bundle. Printable activities for letters, numbers, tracing and colouring.">
-<title>200 Kids Worksheets Bundle | Ebook Matrix</title>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;600;700;800&display=swap');
-
-:root {
-  --yellow: #f4d84b;
-  --dark: #171812;
-  --cream: #faf9f5;
-  --muted: #73736a;
-  --green: #dcebd5;
-  --border: #e9e7df;
-}
-
-* { box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 85px;
-}
-
-body {
-  margin: 0;
-  color: var(--dark);
-  background: white;
-  font-family: "DM Sans", sans-serif;
-  line-height: 1.6;
-}
-
-a { color: inherit; text-decoration: none; }
-
-button, a { -webkit-tap-highlight-color: transparent; }
-
-.container {
-  width: min(1120px, calc(100% - 40px));
-  margin: auto;
-}
-
-.topbar {
-  background: var(--dark);
-  color: white;
-  text-align: center;
-  padding: 9px 12px;
-  font-size: 11px;
-  letter-spacing: .5px;
-}
-
-.topbar strong { color: var(--yellow); }
-
-header {
-  background: white;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.nav {
-  min-height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.brand-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 11px;
-  background: var(--yellow);
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  letter-spacing: -1px;
-}
-
-.button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 15px 23px;
-  border-radius: 8px;
-  border: 1px solid var(--dark);
-  background: var(--dark);
-  color: white;
-  font-weight: 800;
-  font-size: 13px;
-  transition: .2s;
-  cursor: pointer;
-}
-
-.button:hover { transform: translateY(-2px); }
-
-.button-yellow {
-  background: var(--yellow);
-  color: var(--dark);
-  border-color: var(--yellow);
-}
-
-.button-outline {
-  background: white;
-  color: var(--dark);
-  border-color: var(--border);
-}
-
-.hero {
-  background: var(--cream);
-  padding: 66px 0 70px;
-  overflow: hidden;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr .9fr;
-  align-items: center;
-  gap: 60px;
-}
-
-.eyebrow {
-  color: #78786d;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.pill {
-  display: inline-block;
-  border: 1px solid #e3ddbd;
-  background: #fff9d9;
-  border-radius: 30px;
-  padding: 7px 12px;
-  font-size: 10px;
-  font-weight: 800;
-  margin-bottom: 18px;
-}
-
-h1, h2, h3, p { margin-top: 0; }
-
-h1, h2, h3 {
-  font-family: Manrope, sans-serif;
-  letter-spacing: -1.5px;
-}
-
-h1 {
-  font-size: clamp(38px, 5.2vw, 62px);
-  line-height: 1.06;
-  margin-bottom: 20px;
-}
-
-h1 span, h2 span { color: #a18a10; }
-
-.hero-copy > p {
-  max-width: 500px;
-  font-size: 15px;
-  line-height: 1.9;
-  color: var(--muted);
-}
-
-.checklist {
-  padding: 0;
-  list-style: none;
-  margin: 25px 0;
-  display: grid;
-  gap: 11px;
-  font-size: 13px;
-}
-
-.checklist li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.check {
-  display: inline-grid;
-  place-items: center;
-  flex: 0 0 21px;
-  height: 21px;
-  border-radius: 50%;
-  background: var(--yellow);
-  font-size: 11px;
-  font-weight: 800;
-}
-
-.buy-row {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-  margin-top: 25px;
-}
-
-.price {
-  font-family: Manrope, sans-serif;
-  font-size: 34px;
-  font-weight: 800;
-  letter-spacing: -1.5px;
-}
-
-.old-price {
-  font-size: 13px;
-  color: #8c8b83;
-  text-decoration: line-through;
-  margin-left: 5px;
-}
-
-.offer-note {
-  margin: 12px 0 0;
-  font-size: 10px;
-  color: var(--muted);
-}
-
-.hero-visual {
-  position: relative;
-  padding: 20px;
-}
-
-.main-cover {
-  width: min(100%, 390px);
-  aspect-ratio: 4 / 4.5;
-  margin: auto;
-  padding: 28px;
-  background: var(--green);
-  border-radius: 9px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: 15px 22px 50px #152a171c;
-  transform: rotate(2deg);
-}
-
-.main-cover:before,
-.main-cover:after {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border: 1px solid #42654838;
-  border-radius: 50%;
-  right: -80px;
-  top: 70px;
-}
-
-.main-cover:after {
-  width: 165px;
-  height: 165px;
-  top: 98px;
-  right: -52px;
-}
-
-.cover-brand {
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.cover-doodle {
-  font-size: 52px;
-  margin-top: 26px;
-}
-
-.main-cover h2 {
-  font-size: clamp(30px, 4vw, 43px);
-  line-height: .98;
-  margin: 16px 0 12px;
-  letter-spacing: -2px;
-  position: relative;
-  z-index: 1;
-}
-
-.main-cover p {
-  font-size: 10px;
-  letter-spacing: 1px;
-  font-weight: 800;
-}
-
-.cover-bottom {
-  margin-top: auto;
-  padding-top: 20px;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.floating-badge {
-  position: absolute;
-  bottom: 25px;
-  left: -5px;
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 13px 17px;
-  font-size: 11px;
-  font-weight: 700;
-  box-shadow: 0 10px 30px #0000000b;
-}
-
-.floating-badge strong {
-  display: block;
-  font-size: 17px;
-}
-
-.trust-strip {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  padding: 19px 0;
-}
-
-.trust-items {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 15px;
-  font-size: 11px;
-  font-weight: 700;
-  color: #57584f;
-}
-
-.section {
-  padding: 78px 0;
-}
-
-.section-heading {
-  max-width: 660px;
-  margin: 0 auto 38px;
-  text-align: center;
-}
-
-.section-heading h2 {
-  font-size: clamp(30px, 4vw, 43px);
-  line-height: 1.15;
-  margin: 13px 0;
-}
-
-.section-heading p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.preview-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.preview-card {
-  border: 1px solid var(--border);
-  padding: 14px;
-  border-radius: 12px;
-  background: white;
-}
-
-.worksheet {
-  min-height: 210px;
-  border: 1px solid #deded8;
-  background: #fff;
-  padding: 16px;
-  text-align: center;
-  color: #292a25;
-}
-
-.worksheet small {
-  display: block;
-  font-size: 8px;
-  letter-spacing: 1px;
-  color: var(--muted);
-}
-
-.worksheet h3 {
-  font-size: 19px;
-  margin: 12px 0;
-}
-
-.worksheet .big-letter {
-  font-size: 53px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #9aa990;
-}
-
-.worksheet .number {
-  font-size: 43px;
-  font-weight: 800;
-  color: #b5a13d;
-}
-
-.worksheet .shapes {
-  font-size: 30px;
-  letter-spacing: 8px;
-  margin: 22px 0;
-}
-
-.worksheet .lines {
-  display: grid;
-  gap: 15px;
-  margin: 18px 0;
-}
-
-.worksheet .lines i {
-  display: block;
-  border-bottom: 1px dashed #c8c8c0;
-}
-
-.preview-card > p {
-  margin: 12px 0 0;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-/* Demo worksheet graphics only: replace with real PDF previews. */
-
-.learn-section {
-  background: var(--cream);
-}
-
-.benefit-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.benefit {
-  background: white;
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 25px;
-}
-
-.benefit-icon {
-  width: 45px;
-  height: 45px;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  background: #fff3b2;
-  font-size: 22px;
-}
-
-.benefit h3 {
-  font-size: 17px;
-  margin: 19px 0 9px;
-  letter-spacing: -.5px;
-}
-
-.benefit p {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.8;
-  color: var(--muted);
-}
-
-.offer-section { padding: 70px 0; }
-
-.offer-box {
-  background: var(--dark);
-  color: white;
-  border-radius: 18px;
-  padding: 42px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 30px;
-}
-
-.offer-box .eyebrow { color: #d0d0c4; }
-
-.offer-box h2 {
-  font-size: clamp(29px, 4vw, 43px);
-  line-height: 1.12;
-  margin: 14px 0;
-}
-
-.offer-box h2 span { color: var(--yellow); }
-
-.offer-box p {
-  font-size: 12px;
-  color: #c8c8bd;
-  margin-bottom: 0;
-}
-
-.offer-price {
-  font-size: 38px;
-  font-family: Manrope, sans-serif;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.faq-list { max-width: 760px; margin: auto; }
-
-details {
-  border-bottom: 1px solid var(--border);
-  padding: 20px 0;
-}
-
-summary {
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 800;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-summary:after {
-  content: "+";
-  font-size: 20px;
-}
-
-details[open] summary:after { content: "−"; }
-
-details p {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.8;
-  margin: 14px 0 0;
-}
-
-.final-cta {
-  background: var(--yellow);
-  padding: 48px 20px;
-  text-align: center;
-}
-
-.final-cta h2 {
-  font-size: clamp(29px, 4vw, 43px);
-  line-height: 1.15;
-  margin-bottom: 12px;
-}
-
-.final-cta p {
-  font-size: 13px;
-  margin-bottom: 22px;
-}
-
-.final-cta .button {
-  background: var(--dark);
-  color: white;
-  border-color: var(--dark);
-}
-
-footer {
-  padding: 30px 0;
-  text-align: center;
-  background: white;
-}
-
-footer p, footer small {
-  font-size: 10px;
-  color: var(--muted);
-}
-
-footer .brand { justify-content: center; }
-
-.mobile-buy {
-  display: none;
-}
-
-@media(max-width: 760px) {
-  .container { width: calc(100% - 32px); }
-
-  .nav { min-height: 64px; }
-
-  .nav .button {
-    padding: 10px 12px;
-    font-size: 10px;
-  }
-
-  .hero { padding: 45px 0 50px; }
-
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-  h1 {
-    font-size: 43px;
-    letter-spacing: -2px;
-  }
-
-  .hero-copy > p { font-size: 14px; }
-
-  .hero-visual {
-    max-width: 430px;
-    margin: auto;
-    width: 100%;
-  }
-
-  .main-cover { width: 90%; }
-
-  .floating-badge { left: 0; bottom: 10px; }
-
-  .trust-items {
-    justify-content: flex-start;
-    padding: 0 8px;
-    font-size: 10px;
-  }
-
-  .section { padding: 55px 0; }
-
-  .preview-grid { grid-template-columns: 1fr; }
-
-  .worksheet { min-height: 220px; }
-
-  .benefit-grid { grid-template-columns: 1fr; }
-
-  .offer-box {
-    grid-template-columns: 1fr;
-    padding: 28px 23px;
-  }
-
-  .offer-box .button { width: 100%; }
-
-  .mobile-buy {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    background: white;
-    border-top: 1px solid var(--border);
-    padding: 10px 14px;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-  }
-
-  .mobile-buy strong { font-size: 20px; }
-
-  .mobile-buy .button {
-    padding: 12px 16px;
-    font-size: 11px;
-  }
-
-  body { padding-bottom: 68px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Your Craft - Professional eBook</title>
+    <!-- Tailwind CSS Live CDN -->
+    <script src="https://jsdelivr.net"></script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-<body>
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-slate-100 sticky top-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tight text-indigo-600">AK Publications</div>
+        <a href="#buy-now" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-all shadow-md shadow-indigo-100">Buy Now</a>
+    </nav>
 
-<div class="topbar">
-  SPECIAL DIGITAL BUNDLE · <strong>INTRODUCTORY PRICE ₹99</strong>
-</div>
-
-<header>
-  <div class="container nav">
-    <a href="#" class="brand">
-      <span class="brand-icon">EM</span>
-      EBOOK <strong>MATRIX</strong>
-    </a>
-    <a href="#buy" class="button button-yellow">Get the Bundle ↗</a>
-  </div>
-</header>
-
-<main>
-
-<section class="hero">
-  <div class="container hero-grid">
-
-    <div class="hero-copy">
-      <div class="pill">📚 PRINTABLE LEARNING BUNDLE</div>
-
-      <h1>Make Learning Fun.<br><span>One Page at a Time.</span></h1>
-
-      <p>
-        Keep little minds curious with printable learning activities
-        designed for practice, creativity and fun at home.
-      </p>
-
-      <ul class="checklist">
-        <li><span class="check">✓</span> Alphabet and number practice</li>
-        <li><span class="check">✓</span> Tracing, shapes and matching activities</li>
-        <li><span class="check">✓</span> Colouring and creative activity pages</li>
-        <li><span class="check">✓</span> Convenient printable digital format</li>
-      </ul>
-
-      <div class="buy-row" id="buy">
+    <!-- Hero Section -->
+    <header class="max-w-6xl mx-auto px-6 pt-12 pb-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <span class="price">₹99</span>
-          <span class="old-price">₹299</span>
+            <span class="bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">🔥 Bestseller eBook</span>
+            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mt-4 leading-tight">Master The Art of Modern Business</h1>
+            <p class="text-slate-600 text-lg mt-6 leading-relaxed">इस eBook में आपको मिलेंगे वो सीक्रेट्स जो बड़े स्टार्टअप्स अपने बिज़नेस को 10x स्केल करने के लिए इस्तेमाल करते हैं। आसान हिंदी और प्रैक्टिकल केस स्टडीज के साथ।</p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                <a href="#buy-now" class="bg-indigo-600 hover:bg-indigo-700 text-white text-center font-bold px-8 py-4 rounded-xl shadow-lg shadow-indigo-200 transition-all text-base">Get Your Copy (₹299 Only)</a>
+                <a href="#chapters" class="border border-slate-200 hover:bg-slate-100 text-slate-700 text-center font-semibold px-8 py-4 rounded-xl transition-all text-base">Read Free Chapter</a>
+            </div>
         </div>
-
-        <a class="button button-yellow payment-link"
-           href="PASTE_YOUR_RAZORPAY_PAYMENT_LINK_HERE">
-          Get Your Bundle →
-        </a>
-      </div>
-
-      <p class="offer-note">
-        Digital product · Check the product details before purchasing.
-      </p>
-    </div>
-
-    <div class="hero-visual">
-      <div class="main-cover">
-        <div class="cover-brand">EBOOK MATRIX</div>
-        <div class="cover-doodle">✏️ 🔤</div>
-        <h2>200 KIDS<br>WORKSHEETS</h2>
-        <p>LEARN · TRACE · COLOUR</p>
-        <div class="cover-bottom">A PRINTABLE ACTIVITY COLLECTION</div>
-      </div>
-
-      <div class="floating-badge">
-        <strong>200 Pages*</strong>
-        Printable activities
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<div class="trust-strip">
-  <div class="container trust-items">
-    <span>✓ Digital Download</span>
-    <span>✓ Printable Activities</span>
-    <span>✓ Learn at Home</span>
-    <span>✓ One-Time Purchase*</span>
-  </div>
-</div>
-
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">TAKE A LOOK INSIDE</div>
-      <h2>Learning Made <span>Simple & Fun.</span></h2>
-      <p>
-        Explore examples of the activity styles included in this demo.
-        Replace them with genuine pages from your actual bundle.
-      </p>
-    </div>
-
-    <div class="preview-grid">
-
-      <article class="preview-card">
-        <div class="worksheet">
-          <small>EBOOK MATRIX · SAMPLE PREVIEW</small>
-          <h3>Alphabet Practice</h3>
-          <div class="big-letter">A a</div>
-          <p>Trace the letters and practise writing.</p>
-          <div class="lines"><i></i><i></i></div>
+        <div class="flex justify-center">
+            <!-- eBook Mockup Display -->
+            <div class="bg-gradient-to-tr from-indigo-500 to-purple-600 w-64 h-88 rounded-2xl shadow-2xl flex flex-col justify-between p-6 text-white transform hover:scale-105 transition-transform">
+                <div class="text-xs uppercase opacity-75 tracking-widest font-bold">Premium Edition</div>
+                <div class="my-auto">
+                    <h2 class="text-2xl font-black leading-snug">MODERN <br>BUSINESS <br>HANDBOOK</h2>
+                    <p class="text-xs opacity-80 mt-2">By AK Studio</p>
+                </div>
+                <div class="border-t border-white/20 pt-3 text-[10px] opacity-60">Step-by-step Complete Strategy Guide</div>
+            </div>
         </div>
-        <p>01 · Letter Practice</p>
-      </article>
+    </header>
 
-      <article class="preview-card">
-        <div class="worksheet">
-          <small>EBOOK MATRIX · SAMPLE PREVIEW</small>
-          <h3>Number Fun</h3>
-          <div class="number">1 2 3</div>
-          <p>Count, recognise and practise numbers.</p>
-          <div class="lines"><i></i><i></i></div>
+    <!-- Trust Badges -->
+    <section class="bg-slate-100 border-y border-slate-200/60 py-8">
+        <div class="max-w-4xl mx-auto px-6 grid grid-cols-3 text-center gap-4">
+            <div>
+                <p class="text-2xl md:text-3xl font-extrabold text-slate-900">5,000+</p>
+                <p class="text-xs md:text-sm text-slate-500 font-medium mt-1">Happy Readers</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-extrabold text-slate-900">4.8★</p>
+                <p class="text-xs md:text-sm text-slate-500 font-medium mt-1">Top Rating</p>
+            </div>
+            <div>
+                <p class="text-2xl md:text-3xl font-extrabold text-slate-900">100%</p>
+                <p class="text-xs md:text-sm text-slate-500 font-medium mt-1">Secure Delivery</p>
+            </div>
         </div>
-        <p>02 · Number Activities</p>
-      </article>
+    </section>
 
-      <article class="preview-card">
-        <div class="worksheet">
-          <small>EBOOK MATRIX · SAMPLE PREVIEW</small>
-          <h3>Shapes & Patterns</h3>
-          <div class="shapes">○ △ □</div>
-          <p>Explore shapes and simple patterns.</p>
-          <div class="lines"><i></i><i></i></div>
+    <!-- What You Will Learn Section -->
+    <section class="max-w-5xl mx-auto px-6 py-20" id="chapters">
+        <h2 class="text-3xl font-bold text-center text-slate-900">आप इस eBook में क्या सीखेंगे?</h2>
+        <p class="text-slate-500 text-center mt-2">हर वो चीज़ जो आपको एक सफल लीडर बनाने में मदद करेगी</p>
+        
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-xs">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">01</div>
+                <h3 class="text-lg font-bold text-slate-900">बिज़नेस फाउंडेशन</h3>
+                <p class="text-slate-600 text-sm mt-2 leading-relaxed">बिज़नेस आईडिया को वैलिडेट कैसे करें और बिना किसी बड़े निवेश के शुरुआत कैसे करें।</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-xs">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">02</div>
+                <h3 class="text-lg font-bold text-slate-900">मार्केटिंग और सेल्स</h3>
+                <p class="text-slate-600 text-sm mt-2 leading-relaxed">सोशल मीडिया एड्स और आर्गेनिक रीच का उपयोग करके पहले 1000 ग्राहक कैसे लाएं।</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-100 shadow-xs">
+                <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 font-bold mb-4">03</div>
+                <h3 class="text-lg font-bold text-slate-900">ऑटोमेशन और स्केलिंग</h3>
+                <p class="text-slate-600 text-sm mt-2 leading-relaxed">अपने काम को ऑटोपायलट पर कैसे डालें ताकि आप बिज़नेस पर काम कर सकें, बिज़नेस में नहीं।</p>
+            </div>
         </div>
-        <p>03 · Shapes & Matching</p>
-      </article>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <!-- Sales & Checkout Box -->
+    <section class="max-w-xl mx-auto px-6 py-12" id="buy-now">
+        <div class="bg-white border-2 border-indigo-600 rounded-3xl p-8 shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 bg-indigo-600 text-white text-[10px] font-bold px-4 py-1 uppercase tracking-widest rounded-bl-xl">Limited Offer</div>
+            <h3 class="text-2xl font-bold text-slate-900">Get Instant Access</h3>
+            <p class="text-slate-500 text-sm mt-1">पेमेंट करते ही eBook सीधे आपके ईमेल और फ़ोन पर भेज दी जाएगी।</p>
+            
+            <div class="my-6 p-4 bg-slate-50 rounded-xl flex justify-between items-center">
+                <div>
+                    <span class="text-3xl font-black text-slate-900">₹299</span>
+                    <span class="text-sm line-through text-slate-400 ml-2">₹999</span>
+                </div>
+                <span class="text-xs bg-emerald-50 text-emerald-700 font-bold px-2 py-1 rounded">Save 70% Today</span>
+            </div>
 
-<section class="section learn-section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">WHY THIS BUNDLE?</div>
-      <h2>A Little Practice Can Go <span>a Long Way.</span></h2>
-      <p>Make activity time easier to organise with a collection of printable pages.</p>
-    </div>
+            <!-- Replace your payment link here -->
+            <a href="YOUR_RAZORPAY_OR_INSTAMOJO_LINK" class="block w-full bg-emerald-600 hover:bg-emerald-700 text-white text-center font-bold py-4 rounded-xl transition-all shadow-md">
+                📥 Buy Now & Download PDF
+            </a>
+            
+            <p class="text-center text-xs text-slate-400 mt-4">🔒 256-bit Secure Encrypted Payment</p>
+        </div>
+    </section>
 
-    <div class="benefit-grid">
-      <article class="benefit">
-        <div class="benefit-icon">🔤</div>
-        <h3>Early Learning Practice</h3>
-        <p>Use alphabet, number and basic concept activities to support practice at home.</p>
-      </article>
-
-      <article class="benefit">
-        <div class="benefit-icon">✍️</div>
-        <h3>Hands-On Activities</h3>
-        <p>Give children opportunities to trace, match, recognise and explore.</p>
-      </article>
-
-      <article class="benefit">
-        <div class="benefit-icon">🎨</div>
-        <h3>Creative Time</h3>
-        <p>Add colouring and simple activity pages to your child's learning routine.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="offer-section" id="offer">
-  <div class="container">
-    <div class="offer-box">
-      <div>
-        <div class="eyebrow">YOUR DIGITAL BUNDLE</div>
-        <h2>Bring More Fun to<br><span>Learning Time.</span></h2>
-        <p>Review the included worksheets and file details before ordering.</p>
-      </div>
-
-      <div>
-        <div class="offer-price">₹99</div>
-        <a class="button button-yellow payment-link"
-           href="PASTE_YOUR_RAZORPAY_PAYMENT_LINK_HERE">
-          Buy the Bundle →
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <div class="eyebrow">HELP CENTRE</div>
-      <h2>Frequently Asked <span>Questions.</span></h2>
-    </div>
-
-    <div class="faq-list">
-      <details>
-        <summary>What is included in this bundle?</summary>
-        <p>
-          The final product should list the exact worksheet categories,
-          total number of pages and file format included in your PDF.
-          Update this answer to match your actual bundle.
-        </p>
-      </details>
-
-      <details>
-        <summary>Will I receive a physical book?</summary>
-        <p>
-          This demo is designed for a digital product. Clearly explain
-          whether buyers receive a PDF, how they access it and whether
-          printing is required.
-        </p>
-      </details>
-
-      <details>
-        <summary>How will I receive my purchase?</summary>
-        <p>
-          Explain your real delivery method here, such as email delivery
-          after successful payment. Configure and test that workflow before launch.
-        </p>
-      </details>
-
-      <details>
-        <summary>Can I print the worksheets?</summary>
-        <p>
-          State the actual file and printing options included with your
-          product, along with any applicable usage restrictions.
-        </p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="container">
-    <div class="eyebrow">EBOOK MATRIX</div>
-    <h2>Make Their Next Learning Moment Count.</h2>
-    <p>Explore the bundle details and choose whether it fits your needs.</p>
-    <a class="button" href="#buy">Explore the Bundle ↑</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <a href="#" class="brand">
-      <span class="brand-icon">EM</span>
-      EBOOK <strong>MATRIX</strong>
-    </a>
-    <p>Practical digital guides for curious minds.</p>
-    <small>© <span id="year"></span> Ebook Matrix. All rights reserved.</small>
-  </div>
-</footer>
-
-<div class="mobile-buy">
-  <div>
-    <small>Bundle price</small><br>
-    <strong>₹99</strong>
-  </div>
-  <a href="#buy" class="button button-yellow">Get the Bundle →</a>
-</div>
-
-<script>
-document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 text-xs text-center py-8 mt-12 border-t border-slate-900">
+        <p>© 2026 AK Publications. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
