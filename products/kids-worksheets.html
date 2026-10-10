@@ -1,542 +1,340 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#111111">
 
   <title>200 Kids Worksheets Bundle | Ebook Matrix</title>
+  <meta name="description" content="Explore 200 printable kids worksheets for ages 2–4, including alphabet tracing, numbers, shapes, coloring and matching activities. Get the digital bundle for ₹99.">
+  <meta name="theme-color" content="#080808">
 
-  <meta name="description"
-    content="Explore 200 printable kids worksheets for ages 2–4. Early learning, numbers, shapes, tracing and coloring activities for ₹99.">
-
-  <meta property="og:title" content="200 Kids Worksheets Bundle | Ebook Matrix">
-  <meta property="og:description"
-    content="Make little learning moments more fun with printable worksheets for ₹99.">
-  <meta property="og:type" content="product">
-
-  <!-- CSS FILE -->
-  <link rel="stylesheet" href="../assets/css/kids-worksheets.css">
-
-  <!-- JAVASCRIPT FILE -->
-  <script defer src="../assets/js/kids-worksheets.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="announcement">
-    EBOOK MATRIX <span>•</span> PRINTABLE LEARNING ACTIVITIES
-  </div>
-
-  <!-- HEADER -->
-  <header class="site-header">
-
-    <a class="brand" href="../index.html">
-      <span class="brand-mark">EM</span>
-      <span>Ebook <b>Matrix</b></span>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="Ebook Matrix Home">
+      <span class="logo-icon">▤</span>
+      EBOOK <span>MATRIX</span>
     </a>
 
-    <a class="header-link" href="#whats-inside">
-      Explore the bundle ↓
-    </a>
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
+    <nav class="nav" id="navigation">
+      <a href="#home">Home</a>
+      <a href="#inside">What's Inside</a>
+      <a href="#samples">Sample Pages</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="header-cta buy-button" href="#buy">🛒 Buy Now – ₹99</a>
   </header>
 
   <main>
-
-    <!-- HERO SECTION -->
-    <section class="hero wrap">
-
+    <!-- HERO -->
+    <section class="hero" id="home">
       <div class="hero-copy">
+        <span class="eyebrow">200+ PRINTABLE WORKSHEETS</span>
 
-        <p class="eyebrow">
-          <span class="dot"></span>
-          A PRINTABLE ACTIVITY BUNDLE
+        <h1>200 Kids<br>Worksheets Bundle</h1>
+
+        <p class="hero-subtitle">
+          Fun learning activities for kids aged 2–4 years.
         </p>
 
-        <h1>
-          Make little learning moments
-          <em>more fun.</em>
-        </h1>
-
-        <p class="hero-description">
-          A collection of 200 printable worksheets for ages
-          2–4, with activities for early learning, tracing,
-          shapes, numbers and coloring.
-        </p>
-
-        <div class="price-row">
-
-          <span class="price">₹99</span>
-
-          <span class="price-note">
-            One-time payment<br>
-            <b>Digital PDF bundle</b>
-          </span>
-
+        <div class="feature-row">
+          <div class="feature">
+            <span>🧠</span>
+            <p>Early<br>Learning</p>
+          </div>
+          <div class="feature">
+            <span>📚</span>
+            <p>Fun &<br>Engaging</p>
+          </div>
+          <div class="feature">
+            <span>🖨️</span>
+            <p>Print at<br>Home</p>
+          </div>
+          <div class="feature">
+            <span>❤️</span>
+            <p>Parent<br>Friendly</p>
+          </div>
         </div>
 
-        <!-- REPLACE WITH YOUR RAZORPAY PAYMENT LINK -->
-        <a
-          class="button button-primary buy-button"
-          href="PASTE_YOUR_RAZORPAY_PAYMENT_LINK_HERE"
-          data-buy>
-          Get the Worksheets — ₹99 →
+        <a href="#buy" class="primary-button buy-button">
+          🛒 Get 200 Worksheets Now – ₹99
         </a>
 
-        <p class="microcopy">
-          ✓ Printable at home
-          ✓ No physical product shipped
-        </p>
-
-        <p class="small-note">
-          Digital product only. Printer and paper are not included.
-        </p>
-
+        <div class="trust-row">
+          <span>✓ Digital PDF</span>
+          <span>✓ Razorpay Payment</span>
+          <span>✓ One-time Price</span>
+        </div>
       </div>
 
-      <!-- PRODUCT PREVIEW -->
       <div class="hero-art">
+        <div class="sale-badge">ONLY<br><strong>₹99</strong></div>
 
-        <div class="sunburst"></div>
-
-        <div class="floating-label label-top">
-          PLAY • LEARN • REPEAT
+        <div class="worksheet sheet-back">
+          <h3>Numbers Tracing</h3>
+          <span class="trace-number">1 2 3</span>
+          <p>Trace the numbers</p>
+          <div class="trace-line">1 1 1 1 1</div>
+          <div class="trace-line">2 2 2 2 2</div>
+          <div class="trace-line">3 3 3 3 3</div>
         </div>
 
-        <div class="worksheet-stack">
-
-          <img
-            class="sheet sheet-back"
-            src="../assets/images/worksheet-shapes.svg"
-            alt="Sample shapes worksheet">
-
-          <img
-            class="sheet sheet-middle"
-            src="../assets/images/worksheet-numbers.svg"
-            alt="Sample numbers worksheet">
-
-          <img
-            class="sheet sheet-front"
-            src="../assets/images/worksheet-alphabet.svg"
-            alt="Sample alphabet worksheet">
-
+        <div class="book-cover">
+          <span class="book-label">EBOOK MATRIX PRESENTS</span>
+          <h2>200 KIDS<br>WORKSHEETS</h2>
+          <p class="book-subtitle">ACTIVITY BUNDLE</p>
+          <span class="age-tag">AGES 2–4 YEARS</span>
+          <div class="book-kids">👧🏻 📚 👦🏻</div>
+          <div class="book-rainbow">🌈 ⭐ 🖍️</div>
+          <div class="book-footer">
+            ALPHABET • NUMBERS • SHAPES<br>
+            COLORING • TRACING • MATCHING
+          </div>
         </div>
 
-        <div class="floating-label label-bottom">
-          <span>200</span> worksheet pages*
-        </div>
-
+        <div class="hero-decoration decoration-one">✦</div>
+        <div class="hero-decoration decoration-two">✎</div>
       </div>
-
     </section>
 
-    <!-- PRODUCT HIGHLIGHTS -->
-    <section class="trust-strip wrap">
-
-      <div>
-        <span class="trust-icon">01</span>
-        <span>
-          <b>200 Worksheets</b>
-          <small>Complete digital bundle</small>
-        </span>
-      </div>
-
-      <div>
-        <span class="trust-icon">02</span>
-        <span>
-          <b>Ages 2–4</b>
-          <small>Early learning activities</small>
-        </span>
-      </div>
-
-      <div>
-        <span class="trust-icon">03</span>
-        <span>
-          <b>Digital PDF</b>
-          <small>Print pages as needed</small>
-        </span>
-      </div>
-
-    </section>
-
-    <!-- WHAT'S INCLUDED -->
-    <section class="section wrap" id="whats-inside">
-
+    <!-- WHAT'S INSIDE -->
+    <section class="section dark-section" id="inside">
       <div class="section-heading">
-
-        <p class="eyebrow">A LITTLE BIT OF EVERYTHING</p>
-
-        <h2>What's inside the bundle?</h2>
-
-        <p>
-          Explore sample activity previews and discover the
-          types of learning activities this bundle is designed
-          to support.
-        </p>
-
+        <h2>What's <span>Inside</span> the Bundle?</h2>
+        <p>A variety of printable activities for little learners.</p>
       </div>
 
       <div class="category-grid">
-
-        <!-- ALPHABET -->
         <article class="category-card">
-
-          <img
-            src="../assets/images/worksheet-alphabet.svg"
-            alt="Alphabet tracing worksheet preview">
-
-          <div>
-            <span class="card-number">01</span>
-            <h3>Letters & Early Learning</h3>
-            <p>
-              Simple letter recognition and pre-writing practice.
-            </p>
-          </div>
-
+          <div class="category-icon">🔤</div>
+          <h3>Alphabet Worksheets</h3>
+          <p>Letter recognition and tracing practice.</p>
         </article>
 
-        <!-- NUMBERS -->
         <article class="category-card">
-
-          <img
-            src="../assets/images/worksheet-numbers.svg"
-            alt="Numbers and counting worksheet preview">
-
-          <div>
-            <span class="card-number">02</span>
-            <h3>Numbers & Counting</h3>
-            <p>
-              Beginner-friendly number and counting activities.
-            </p>
-          </div>
-
+          <div class="category-icon">🔢</div>
+          <h3>Numbers Worksheets</h3>
+          <p>Early counting and number tracing.</p>
         </article>
 
-        <!-- SHAPES -->
         <article class="category-card">
-
-          <img
-            src="../assets/images/worksheet-shapes.svg"
-            alt="Shapes worksheet preview">
-
-          <div>
-            <span class="card-number">03</span>
-            <h3>Shapes & Matching</h3>
-            <p>
-              Explore basic shapes and visual matching.
-            </p>
-          </div>
-
+          <div class="category-icon">🔺</div>
+          <h3>Shapes Worksheets</h3>
+          <p>Discover basic shapes and patterns.</p>
         </article>
 
-        <!-- COLORING -->
         <article class="category-card">
-
-          <img
-            src="../assets/images/worksheet-coloring.svg"
-            alt="Coloring worksheet preview">
-
-          <div>
-            <span class="card-number">04</span>
-            <h3>Coloring & Creativity</h3>
-            <p>
-              Simple pictures for creative activity time.
-            </p>
-          </div>
-
+          <div class="category-icon">🖍️</div>
+          <h3>Coloring Worksheets</h3>
+          <p>Creative coloring activities.</p>
         </article>
 
+        <article class="category-card">
+          <div class="category-icon">🧩</div>
+          <h3>Matching Activities</h3>
+          <p>Picture matching and simple puzzles.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">✏️</div>
+          <h3>Tracing Worksheets</h3>
+          <p>Lines, curves and pencil practice.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SAMPLE PAGES -->
+    <section class="section light-section" id="samples">
+      <div class="section-heading">
+        <h2>Sample <span>Worksheets</span></h2>
+        <p>Explore the types of activities included in the bundle.</p>
       </div>
 
-      <p class="fine-print">
-        *Publish the 200-worksheet claim only after verifying
-        the final PDF. Advertised activities must match the
-        actual product.
-      </p>
+      <div class="sample-grid">
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Alphabet Tracing</h3>
+            <div class="paper-big">Aa</div>
+            <div class="dotted-text">A A A A</div>
+            <div class="paper-drawing">🍎</div>
+            <div class="dotted-text">a a a a</div>
+          </div>
+          <span class="sample-label">Alphabet</span>
+        </article>
 
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Numbers Tracing</h3>
+            <div class="paper-big">1 2 3</div>
+            <div class="dotted-text">1 1 1 1</div>
+            <div class="paper-drawing">🍎 🍎</div>
+            <div class="dotted-text">2 2 2 2</div>
+          </div>
+          <span class="sample-label">Numbers</span>
+        </article>
+
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Learn Shapes</h3>
+            <div class="shape-grid">
+              <span>○</span><span>□</span>
+              <span>△</span><span>♡</span>
+            </div>
+          </div>
+          <span class="sample-label">Shapes</span>
+        </article>
+
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Coloring Time</h3>
+            <div class="paper-big">🐘</div>
+            <p class="paper-caption">Color the picture!</p>
+            <div class="color-dots">○ ○ ○ ○</div>
+          </div>
+          <span class="sample-label">Coloring</span>
+        </article>
+
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Match the Animals</h3>
+            <div class="match-row">🐱 ─── 🐱</div>
+            <div class="match-row">🐶 ─── 🐶</div>
+            <div class="match-row">🐰 ─── 🐰</div>
+          </div>
+          <span class="sample-label">Matching</span>
+        </article>
+
+        <article class="sample-card">
+          <div class="paper">
+            <h3>Find the Way</h3>
+            <div class="maze-art">🐶 ▧ ▧<br>▧ ▧ ▧<br>▧ ▧ 🏠</div>
+            <p class="paper-caption">Help the puppy!</p>
+          </div>
+          <span class="sample-label">Maze</span>
+        </article>
+      </div>
+
+      <p class="sample-note">
+        These are illustrative previews. Replace them with actual pages from
+        your PDF before advertising them as product samples.
+      </p>
     </section>
 
     <!-- BENEFITS -->
-    <section class="feature-band">
-
-      <div class="wrap feature-inner">
-
-        <div>
-
-          <p class="eyebrow">
-            MADE FOR AT-HOME ACTIVITY TIME
-          </p>
-
-          <h2>
-            Less scrolling.<br>
-            <em>More doing.</em>
-          </h2>
-
-        </div>
-
-        <div class="feature-list">
-
-          <p>
-            <span>✓</span>
-            A collection of printable activities
-          </p>
-
-          <p>
-            <span>✓</span>
-            Useful for parent-guided activity time
-          </p>
-
-          <p>
-            <span>✓</span>
-            Print individual pages as needed
-          </p>
-
-          <p>
-            <span>✓</span>
-            Digital product with no physical shipment
-          </p>
-
-        </div>
-
+    <section class="section benefits-section" id="benefits">
+      <div class="section-heading">
+        <h2>Why Parents <span>Love It</span></h2>
+        <p>Simple activities to make learning time more engaging.</p>
       </div>
 
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <span>✅</span>
+          <h3>Screen-Free Activities</h3>
+          <p>A printable alternative to screen-based entertainment.</p>
+        </article>
+        <article class="benefit-card">
+          <span>🎯</span>
+          <h3>Practice at Home</h3>
+          <p>Use the pages during short, supervised learning sessions.</p>
+        </article>
+        <article class="benefit-card">
+          <span>🖨️</span>
+          <h3>Print When Needed</h3>
+          <p>Print selected pages using a compatible home printer.</p>
+        </article>
+        <article class="benefit-card">
+          <span>👨‍👩‍👧</span>
+          <h3>Learn Together</h3>
+          <p>Enjoy simple activities with a parent or caregiver.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- HOW IT WORKS -->
-    <section class="section wrap how-section">
-
-      <div class="section-heading">
-
-        <p class="eyebrow">SIMPLE CHECKOUT</p>
-
-        <h2>How it works</h2>
-
-      </div>
-
-      <div class="steps">
-
-        <div class="step">
-
-          <span>1</span>
-
-          <h3>Purchase securely</h3>
-
-          <p>
-            Complete the ₹99 checkout using the configured
-            Razorpay payment link.
-          </p>
-
+    <!-- PURCHASE -->
+    <section class="purchase-section" id="buy">
+      <div class="purchase-copy">
+        <span class="eyebrow">DIGITAL WORKSHEET BUNDLE</span>
+        <h2>Make Learning Fun!</h2>
+        <p>Get your 200 Kids Worksheets Bundle for a one-time price.</p>
+        <div class="price-line">
+          <strong>₹99</strong>
+          <span>One-time payment</span>
         </div>
-
-        <div class="step">
-
-          <span>2</span>
-
-          <h3>Check your email</h3>
-
-          <p>
-            After email delivery is configured, the PDF will
-            be sent to your checkout email address.
-          </p>
-
-        </div>
-
-        <div class="step">
-
-          <span>3</span>
-
-          <h3>Download & print</h3>
-
-          <p>
-            Open the PDF and print suitable pages at home
-            or through a print shop.
-          </p>
-
-        </div>
-
+        <ul class="purchase-list">
+          <li>✓ Digital worksheet bundle</li>
+          <li>✓ Suitable for activities aimed at ages 2–4</li>
+          <li>✓ Email delivery after verified payment</li>
+        </ul>
+        <a href="#" class="primary-button buy-button" id="mainBuyButton">
+          Buy Now – ₹99
+        </a>
+        <p class="small-note">
+          Digital product only. No physical book will be shipped.
+        </p>
       </div>
-
-      <div class="notice">
-
-        <b>Delivery information:</b>
-        Automatic email delivery requires a separate,
-        verified payment automation. This HTML page alone
-        cannot verify payments or send the PDF.
-
+      <div class="purchase-art">
+        <div class="purchase-book">📚<br><strong>200 KIDS<br>WORKSHEETS</strong><br>🌈 ✏️ 🧩</div>
+        <div class="purchase-price">₹99</div>
       </div>
-
     </section>
 
     <!-- FAQ -->
-    <section class="section faq-section">
-
-      <div class="wrap faq-layout">
-
-        <div>
-
-          <p class="eyebrow">GOOD TO KNOW</p>
-
-          <h2>Questions, answered.</h2>
-
-          <p class="faq-intro">
-            Read these details before purchasing.
-          </p>
-
-          <!-- REPLACE WITH YOUR SUPPORT EMAIL -->
-          <a
-            class="text-link"
-            href="mailto:YOUR_SUPPORT_EMAIL_HERE">
-            Contact support →
-          </a>
-
-        </div>
-
-        <div class="faq-list">
-
-          <details>
-            <summary>What will I receive?</summary>
-            <p>
-              A digital worksheet bundle in PDF format.
-              Please check the final product details before buying.
-            </p>
-          </details>
-
-          <details>
-            <summary>Is this a physical book?</summary>
-            <p>
-              No. This is a digital product. No printed book
-              or physical item will be shipped.
-            </p>
-          </details>
-
-          <details>
-            <summary>What age is it intended for?</summary>
-            <p>
-              The bundle is presented for ages 2–4.
-              Adult guidance may be helpful for some activities.
-            </p>
-          </details>
-
-          <details>
-            <summary>Can I print the worksheets?</summary>
-            <p>
-              Yes, for personal use, subject to the usage
-              terms provided with your product.
-            </p>
-          </details>
-
-          <details>
-            <summary>When will the PDF arrive?</summary>
-            <p>
-              Once automatic delivery is configured, the PDF
-              should be sent to your checkout email address.
-              Check your spam folder if needed.
-            </p>
-          </details>
-
-          <details>
-            <summary>What is the refund policy?</summary>
-            <p>
-              Please read the seller's actual refund policy
-              before purchasing.
-              <a href="../refund-policy.html">Refund Policy</a>
-            </p>
-          </details>
-
-        </div>
-
+    <section class="section light-section" id="faq">
+      <div class="section-heading">
+        <h2>Frequently Asked <span>Questions</span></h2>
       </div>
 
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How will I receive the worksheets?</summary>
+          <p>After your payment is verified, the delivery system will email
+          the PDF or a secure download link to your registered email address.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What age group is this bundle for?</summary>
+          <p>The activities are intended for children aged 2–4, with adult
+          guidance as needed.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I print the worksheets at home?</summary>
+          <p>Yes, provided your printer and paper are compatible with the PDF.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Is this a physical book?</summary>
+          <p>No. This is a digital product. You will receive a PDF or download
+          link after verified payment and successful delivery processing.</p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What if I don't receive my email?</summary>
+          <p>Check your spam folder first. If it is still missing, contact
+          the seller using the support email shown on the payment page.</p>
+        </details>
+      </div>
     </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta wrap">
-
-      <div>
-
-        <p class="eyebrow">
-          READY FOR A LITTLE LEARNING TIME?
-        </p>
-
-        <h2>
-          Bring home the <em>worksheet bundle.</em>
-        </h2>
-
-        <p>
-          200 printable worksheets • Ages 2–4 • Digital PDF
-        </p>
-
-      </div>
-
-      <div class="final-buy">
-
-        <span class="price">₹99</span>
-
-        <a
-          class="button button-dark buy-button"
-          href="PASTE_YOUR_RAZORPAY_PAYMENT_LINK_HERE"
-          data-buy>
-          Buy the Bundle →
-        </a>
-
-      </div>
-
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-
-    <div class="wrap footer-inner">
-
-      <a class="brand" href="../index.html">
-        <span class="brand-mark">EM</span>
-        <span>Ebook <b>Matrix</b></span>
-      </a>
-
-      <p>Digital resources for everyday learning.</p>
-
-      <nav aria-label="Footer links">
-        <a href="../privacy-policy.html">Privacy</a>
-        <a href="../terms.html">Terms</a>
-        <a href="../refund-policy.html">Refunds</a>
-        <a href="mailto:YOUR_SUPPORT_EMAIL_HERE">Support</a>
-      </nav>
-
+  <footer class="footer">
+    <a class="logo" href="#home">EBOOK <span>MATRIX</span></a>
+    <p>Digital learning resources for little learners.</p>
+    <p>© <span id="year"></span> Ebook Matrix. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="contact.html">Contact</a>
     </div>
-
-    <div class="wrap footer-bottom">
-
-      <span>
-        © <span id="year"></span> Ebook Matrix
-      </span>
-
-      <span>Digital product • No physical shipment</span>
-
-    </div>
-
   </footer>
-
-  <!-- MOBILE STICKY BUY BUTTON -->
-  <div class="mobile-buy-bar">
-
-    <span>
-      <b>₹99</b>
-      <small>200 Worksheets</small>
-    </span>
-
-    <a
-      class="button button-primary"
-      href="PASTE_YOUR_RAZORPAY_PAYMENT_LINK_HERE"
-      data-buy>
-      Buy Now →
-    </a>
-
-  </div>
-
 </body>
 </html>
